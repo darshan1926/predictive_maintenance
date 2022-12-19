@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Prediction page </title>
+		<link rel="stylesheet" href="./predict.css">	
+		<script defer src="validate.js"	></script>
+	</head>
+	<body></br></br></br></br></br>
+	<div id="error"></div>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Predictive Maintenance </h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form id="form" action="/predict" method="POST">
+				<div class="msg">{{ msg }}</div>
+        			<lable class="names"><strong>Unit Number:</strong></lable></br>	
+					<input id="unit" name="unit" type="number" placeholder="Enter  unit Number" class="textbox"/></br></br>
+					<lable class="names"><strong>Time in Cycle:</strong></lable></br>
+					<input id="cycle" name="cycle" type="number" placeholder="Enter  number of cycle" class="textbox"/></br></br></br>
+					<lable class="names"><strong>Oparetional setting 1:</strong></lable></br>
+					<input id="opset1" name="opset1" type="float" placeholder="Enter oparetional setting 1 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Oparetional setting 2:</strong></lable></br>
+					<input id="opset2" name="opset2" type="float" placeholder="Enter oparetional setting 2 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 2:</strong></lable></br>
+					<input id="sensor2" name="sensor2" type="float" placeholder="Enter sensor Mesurment 2 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 3:</strong></lable></br>
+					<input id="sensor3" name="sensor3" type="float" placeholder="Enter sensor Mesurment 3 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 4:</strong></lable></br>
+					<input id="sensor4" name="sensor4" type="float" placeholder="Enter sensor Mesurment 4 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 7:</strong></lable></br>
+					<input id="sensor7" name="sensor7" type="float" placeholder="Enter sensor Mesurment 7 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 8:</strong></lable></br>
+					<input id="sensor8" name="sensor8" type="float" placeholder="Enter sensor Mesurment 8 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 9:</strong></lable></br>
+					<input id="sensor9" name="sensor9" type="float" placeholder="Enter sensor Mesurment 9 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 11:</strong></lable></br>
+					<input id="sensor11" name="sensor11" type="float" placeholder="Enter sensor Mesurment 11 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 12:</strong></lable></br>
+					<input id="sensor12" name="sensor12" type="float" placeholder="Enter sensor Mesurment 12 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 13:</strong></lable></br>
+					<input id="sensor13" name="sensor13" type="float" placeholder="Enter sensor Mesurment 13 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 15:</strong></lable></br>
+					<input id="sensor15" name="sensor15" type="float" placeholder="Enter sensor Mesurment 15 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 17:</strong></lable></br>
+					<input id="sensor17" name="sensor17" type="float" placeholder="Enter sensor Mesurment 17 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 20:</strong></lable></br>
+					<input id="sensor20" name="sensor20" type="float" placeholder="Enter sensor Mesurment 20 value" class="textbox" required/></br></br></br>
+					<lable class="names"><strong>Sensor mesurment 21:</strong></lable></br>
+					<input id="sensor21" name="sensor21" type="float" placeholder="Enter sensor Mesurment 21 value" class="textbox" required/></br></br></br>
+					<input type="submit" class="btn" value="Predict"></br></br>
+				</form>
+			</h2>
+			<h3 align="center">RUL Prediction value is <b>{{predict}} </b></h3>
+		</div>
+		</div>
+	</body>
+</html>
